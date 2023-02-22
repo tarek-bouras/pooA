@@ -1,6 +1,7 @@
 public class cercle2 extends point{
     
     private double rayon;
+    // private double centre;
 
     public cercle2(double x , double y ,double rayon){
         super(x, y);
@@ -19,8 +20,13 @@ public class cercle2 extends point{
         return rayon;
     }
 
+    public point getCentre(double x , double y){
+        return this;
+    }
+
     public void affiche(){
-        System.out.println("le cordonnées sont "+getX() + " "+getY()+" le rayon est  "+rayon);
+        super.affiche();
+        // System.out.println("le cordonnées sont "+getX() + " "+getY()+" le rayon est  "+rayon+" le centre est"+this);
     }
 
     
